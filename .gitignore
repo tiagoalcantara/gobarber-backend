@@ -1,5 +1,8 @@
 node_modules/
 .vscode/
 
+config/*
+!config.gitkeep
 tmp/*
 !tmp/.gitkeep
+
