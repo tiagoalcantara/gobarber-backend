@@ -11,6 +11,7 @@
 - Utilizar Mailtrap para testar envios em ambiente de desenvolvimento;
 - Utilizar Amazon SES para envios em produção;
 - O envio de e-mails deve acontecer em segundo plano (background job);
+- Usar um token para fazer a validação entre requisição e execução da alteração de senha;
 
 **Regras de Negócio (RN)**
 
