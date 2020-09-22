@@ -17,6 +17,6 @@ export default class UsersController {
 
     const { password: _, ...userWithoutPassword } = user;
 
-    return response.json({ user: userWithoutPassword });
+    return response.json({ ...userWithoutPassword });
   }
 }
