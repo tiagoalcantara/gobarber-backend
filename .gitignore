@@ -6,3 +6,5 @@ config/*
 tmp/*
 !tmp/.gitkeep
 
+.env
+ormconfig.json
