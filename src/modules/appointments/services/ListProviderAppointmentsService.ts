@@ -27,9 +27,7 @@ class ListProviderAppointmentsService {
     month,
     day,
   }: IRequest): Promise<Appointment[]> {
-    let appointments = await this.cacheProvider.get<Appointment[]>(
-      `provider-appointments:${providerId}:${year}-${month}-${day}`,
-    );
+    let appointments;
 
     if (!appointments) {
       appointments = await this.appointmentsRepository.findAllInDayFromProvider(
